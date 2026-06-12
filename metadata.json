@@ -1,0 +1,6 @@
+{
+  "name": "Amora Cafe",
+  "description": "Premium menu browser and AI-powered special offers experience for Amora Cafe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
