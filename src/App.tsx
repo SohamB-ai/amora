@@ -327,10 +327,10 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen bg-[#071F12] text-[#0B301D] font-sans flex flex-col items-center justify-center p-0 md:p-4 overflow-hidden">
+    <div className="h-dvh bg-[#071F12] text-[#0B301D] font-sans flex flex-col items-center justify-center p-0 md:p-4 overflow-hidden">
       
       {/* Maximum outer mobile viewport container to simulate standard mobile screens flawlessly */}
-      <div className="w-full max-w-md bg-white h-screen md:h-[850px] shadow-2xl flex flex-col relative border-x border-[#D4AF37]/30 rounded-none md:rounded-[32px] overflow-hidden">
+      <div className="w-full max-w-md bg-white h-dvh md:h-[850px] shadow-2xl flex flex-col relative border-x border-[#D4AF37]/30 rounded-none md:rounded-[32px] overflow-hidden">
         
         {/* --- DYNAMIC LOADING SPLASH OVERLAY WITH CIRCULAR SPINNING PATTERNS --- */}
         <AnimatePresence>
@@ -867,7 +867,7 @@ export default function App() {
         </AnimatePresence>
 
         {/* --- BOTTOM MOBILE PERSISTENT TAB BAR --- */}
-        <nav className="absolute bottom-0 inset-x-0 h-16 bg-white border-t border-[#F0ECE1] flex justify-around items-center px-4 z-40 shadow-[0_-4px_16px_rgba(11,48,29,0.03)]">
+        <nav className="fixed bottom-0 left-0 right-0 md:absolute md:bottom-0 md:inset-x-0 w-full max-w-md mx-auto h-16 bg-white border-t border-[#F0ECE1] flex justify-around items-center px-4 z-40 shadow-[0_-4px_16px_rgba(11,48,29,0.03)]">
           <button
             id="tab-btn-menu"
             onClick={() => setActiveTab("menu")}
